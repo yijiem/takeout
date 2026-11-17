@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-takeout"
+version = "0.1.0"
+description = "Portable conversation and workspace checkpoints for agent handoffs"
+requires-python = ">=3.9"
+
+[project.scripts]
+takeout = "takeout.cli:main"
+
+[tool.setuptools]
+packages = ["takeout"]
